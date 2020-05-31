@@ -1,24 +1,3 @@
-# rgv-site
+# rgvillanueva28.github.io
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[![Build Status](https://travis-ci.com/rgvillanueva28/rgvillanueva28.github.io.svg?branch=master)](https://travis-ci.com/rgvillanueva28/rgvillanueva28.github.io)
