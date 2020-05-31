@@ -14,5 +14,8 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   local_dir: dist
+  target-branch: master
+  repo: rgvillanueva28/rgvillanueva28.github.io
+  keep-history: true
   on:
     branch: master
