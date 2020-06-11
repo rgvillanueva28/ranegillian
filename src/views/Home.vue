@@ -1,5 +1,5 @@
 <template>
-  <section id="welcome">
+  <section id="welcome" class="vh100">
     <v-row no-gutters>
       <v-img
         :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
@@ -22,7 +22,7 @@
                 >MY SITE</span>
               </v-col>
 
-              <v-btn class="align-self-end" fab outlined @click="$vuetify.goTo('#about-me')">
+              <v-btn class="align-self-end" fab outlined @click="$vuetify.goTo('#about-me', { offset: 50 })">
                 <v-icon>mdi-chevron-triple-down</v-icon>
               </v-btn>
             </v-row>
@@ -45,3 +45,9 @@ export default {
   components: {}
 };
 </script>
+
+<style scoped>
+.vh100 {
+  min-height: calc(100vh - 50px);
+}
+</style>

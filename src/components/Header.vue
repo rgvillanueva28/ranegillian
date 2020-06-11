@@ -1,11 +1,10 @@
 <template>
   <v-app-bar
-    app
     dark
-    shrink-on-scroll
-    fade-img-on-scroll
-    prominent
-    src="https://picsum.photos/id/180/1920/1080.jpg"
+    v-scroll="onScroll"
+    :color="!isScrolling ? 'transparent' : ''"
+    fixed
+    flat
   >
     <!-- <v-img alt="Logo" contain max-height="30" max-width="30" :src="require('../assets/logo.png')" /> -->
     <v-toolbar-title>
@@ -56,6 +55,15 @@ export default {
       ];
       return size ? { [size]: true } : {};
     }
-  }
+  },
+  data: () => ({
+      isScrolling: false,
+    }),
+    methods: {
+      onScroll () {
+        const offset = window.pageYOffset
+        this.isScrolling = offset > 50
+      },
+    },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <section id="about-me">
+  <section id="about-me" class="vh100">
     <div class="text-center py-10">
       <v-avatar :size="[$vuetify.breakpoint.smAndDown ? '250' : '350']" class="grey darken-3">
         <img alt="Rane Gillian" src="../assets/logo.png" height="150" />
@@ -27,3 +27,9 @@ export default {
   name: "About"
 };
 </script>
+
+<style scoped>
+.vh100 {
+  min-height: calc(100vh - 50px);
+}
+</style>
